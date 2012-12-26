@@ -1,0 +1,9 @@
+{
+  "name": "coffee-hook",
+  "version": "0.0.1",
+  "scripts": [ "index.js", "lib/multiply.js" ],
+  "coffee": [
+    { "src": "index.coffee",        "dest": "index.js" },
+    { "src": "src/multiply.coffee", "dest": "lib/multiply.js" }
+  ]
+}

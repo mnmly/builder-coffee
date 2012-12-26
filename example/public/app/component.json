@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "scripts": [ "index.js" ],
+  "coffee": [
+    { "src": "index.coffee",        "dest": "index.js" }
+  ],
+  "dependencies": {
+    "component/calendar": "*"
+  }
+}

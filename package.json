@@ -1,0 +1,21 @@
+{
+  "name": "builder-coffee-plugin",
+  "version": "0.0.1",
+  "description": "CoffeeScript plugin for builder.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@d.mnmly.com:builder-coffeescript-hook.git"
+  },
+  "keywords": [ "hook", "plugin", "builder.js" ],
+  "author": "mnmly",
+  "license": "BSD",
+  "dependencies": {
+    "should": "~1.2.1",
+    "component-builder": "~0.5.3",
+    "coffee-script": "~1.4.0"
+  }
+}

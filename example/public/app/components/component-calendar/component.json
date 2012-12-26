@@ -1,0 +1,31 @@
+{
+  "name": "calendar",
+  "repo": "component/calendar",
+  "description": "Calendar component",
+  "version": "0.0.3",
+  "keywords": [
+    "calendar",
+    "date",
+    "ui"
+  ],
+  "dependencies": {
+    "component/range": "*",
+    "component/jquery": "*",
+    "component/emitter": "*",
+    "component/in-groups-of": "*"
+  },
+  "development": {
+    "component/aurora-calendar": "*"
+  },
+  "styles": [
+    "lib/calendar.css"
+  ],
+  "scripts": [
+    "index.js",
+    "lib/utils.js",
+    "lib/template.js",
+    "lib/calendar.js",
+    "lib/days.js"
+  ],
+  "license": "MIT"
+}
