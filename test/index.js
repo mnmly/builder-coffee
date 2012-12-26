@@ -6,7 +6,7 @@ describe( 'Builder.js: CoffeeScript hook', function(){
   
     it ( 'should compile coffee', function( done ){
 
-        var builder = new Builder( 'test/fixtures/coffee-hook' );
+        var builder = new Builder( 'test/fixtures/square' );
 
         builder.addLookup( 'test/fixtures' );
         builder.use( coffeeHook );
@@ -15,10 +15,10 @@ describe( 'Builder.js: CoffeeScript hook', function(){
             
             if ( err ) { return done( err ); }
 
-            var js  = res.require + res.js + 'require("coffee-hook")',
+            var js  = res.require + res.js + 'require("square")',
                 ret = vm.runInNewContext( js );
 
-            ret( 3, 3 ).should.equal( 90 );
+            ret( 10 ).should.equal( 100 );
             done();
 
         } );

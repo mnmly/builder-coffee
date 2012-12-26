@@ -1,5 +1,5 @@
 {
-  "name": "coffee-hook",
+  "name": "square",
   "version": "0.0.1",
   "scripts": [ "index.js", "lib/multiply.js" ],
   "coffee": [
