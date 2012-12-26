@@ -29,26 +29,26 @@ To comply with [component.js spec], all of the `coffee` should be compiled down 
 
 ```javascript
 
-        var coffeeHook = require( 'builder-coffee' ),
-            Builder    = require( 'component-builder' );
+var coffeeHook = require( 'builder-coffee' ),
+    Builder    = require( 'component-builder' );
 
-        var builder = new Builder( 'test/fixtures/coffee-hook' );
+var builder = new Builder( 'test/fixtures/coffee-hook' );
 
-        builder.addLookup( 'test/fixtures' );
-        builder.use( coffeeHook );
+builder.addLookup( 'test/fixtures' );
+builder.use( coffeeHook );
 
-        builder.build( function( err, res ){
-            
-            if ( err ) { return done( err ); }
+builder.build( function( err, res ){
+    
+    if ( err ) { return done( err ); }
 
-            var js  = res.require + res.js + 'require("coffee-hook")',
-                ret = vm.runInNewContext( js );
+    var js  = res.require + res.js + 'require("coffee-hook")',
+        ret = vm.runInNewContext( js );
 
-            ret( 3, 3 ).should.equal( 90 );
-            done();
+    ret( 3, 3 ).should.equal( 90 );
+    done();
 
 
-        } );
+} );
 ```
 
 
