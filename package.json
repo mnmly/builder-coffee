@@ -8,15 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mnmly/builder-coffee.git"
+    "url": "git://github.com/mnmly/builder-coffee.git"
   },
-  "keywords": [
-    "hook",
-    "plugin",
-    "builder.js",
-    "component.js"
-  ],
-  "author": "mnmly",
+  "keywords": [ "hook", "plugin", "builder.js", "component.js" ],
+  "author": "mnmly <i.am@mnmly.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
