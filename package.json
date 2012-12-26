@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git@d.mnmly.com:builder-coffeescript-hook.git"
   },
-  "keywords": [ "hook", "plugin", "builder.js" ],
+  "keywords": [ "hook", "plugin", "builder.js", "component.js" ],
   "author": "mnmly",
   "license": "BSD",
   "dependencies": {
